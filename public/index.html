@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Smart Attendance Management System</h1>
+    <p class="subtitle">A basic NodeJS and ExpressJS based student attendance tracker</p>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Total Students</h3>
+        <p id="totalStudents">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Present</h3>
+        <p id="presentCount">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Absent</h3>
+        <p id="absentCount">0</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Add Student</h2>
+      <input type="text" id="rollNo" placeholder="Enter Roll Number">
+      <input type="text" id="studentName" placeholder="Enter Student Name">
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <div class="card">
+      <h2>Student List</h2>
+      <input type="text" id="searchInput" placeholder="Search by name or roll number" onkeyup="searchStudents()">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Attendance</th>
+          </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Attendance Records</h2>
+      <ul id="attendanceList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

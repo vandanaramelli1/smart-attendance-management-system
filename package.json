@@ -1,0 +1,12 @@
+{
+  "name": "smart-attendance-system",
+  "version": "1.0.0",
+  "description": "A basic attendance management system using HTML, CSS, JavaScript, NodeJS and ExpressJS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
